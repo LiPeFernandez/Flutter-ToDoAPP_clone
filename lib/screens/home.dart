@@ -42,14 +42,15 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         margin: EdgeInsets.only(
-                          top: 50,
+                          top: 30,
                           bottom: 20,
                         ),
                         child: Text(
-                          'All ToDos',
+                          'Todas as Tarefas',
                           style: TextStyle(
                             fontSize: 30,
                             fontWeight: FontWeight.w500,
+                            color: Colors.grey,
                           ),
                         ),
                       ),
@@ -94,7 +95,7 @@ class _HomeState extends State<Home> {
                   child: TextField(
                     controller: _todoController,
                     decoration: InputDecoration(
-                        hintText: 'Add a new todo item',
+                        hintText: 'Adicionar nova Tarefa',
                         border: InputBorder.none),
                   ),
                 ),
@@ -188,7 +189,7 @@ class _HomeState extends State<Home> {
             minWidth: 25,
           ),
           border: InputBorder.none,
-          hintText: 'Search',
+          hintText: 'Buscar',
           hintStyle: TextStyle(color: tdGrey),
         ),
       ),
@@ -210,7 +211,7 @@ class _HomeState extends State<Home> {
           width: 40,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(20),
-            child: Image.asset('assets/images/avatar.jpeg'),
+            child: Image.asset('assets/images/avatar2.jpeg'),
           ),
         ),
       ]),
